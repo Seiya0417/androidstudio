@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MemoApp</string>
+
+    <!--追加-->
+    <string-array name="menu">
+        <item>削除</item>
+        <item>ヘルプ</item>
+    </string-array>
+</resources>

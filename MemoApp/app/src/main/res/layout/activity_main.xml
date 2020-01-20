@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemoController">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:id="@+id/outframe" >
+
+    <!--android:background="@color/mycolor3" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:weightSum="3">
+
+
+        <EditText
+            android:id="@+id/date_frame"
+            android:layout_width="248dp"
+            android:layout_height="58dp"
+            tools:layout_editor_absoluteX="11dp"
+            tools:layout_editor_absoluteY="16dp"
+
+            android:layout_margin="10dp"
+            android:layout_weight="2" />
+            <!--android:fontFamily="casual"
+            android:background="@drawable/textbox_bkground" -->
+
+        <Button
+            android:id="@+id/menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="メニュー"
+            android:onClick="onClick"
+            tools:layout_editor_absoluteX="267dp"
+            tools:layout_editor_absoluteY="28dp"
+
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bkground" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登録"
+            android:onClick="onClick"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="87dp"
+
+            android:layout_margin="10dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="クリア"
+            android:onClick="onClick"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="87dp"
+
+            android:layout_margin="10dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="検索"
+            android:onClick="onClick"
+            tools:layout_editor_absoluteX="267dp"
+            tools:layout_editor_absoluteY="87dp"
+
+            android:layout_margin="10dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/previous_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="前へ"
+            android:onClick="onClick"
+            tools:layout_editor_absoluteX="71dp"
+            tools:layout_editor_absoluteY="150dp"
+
+            android:layout_margin="10dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/current_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最新"
+            android:onClick="onClick"
+            tools:layout_editor_absoluteX="166dp"
+            tools:layout_editor_absoluteY="150dp"
+
+            android:layout_margin="10dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="次へ"
+            android:onClick="onClick"
+            tools:layout_editor_absoluteX="267dp"
+            tools:layout_editor_absoluteY="150dp"
+
+            android:layout_margin="10dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/text_frame"
+            android:layout_width="342dp"
+            android:layout_height="206dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="226dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
